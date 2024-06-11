@@ -417,59 +417,108 @@
 //     }
 // };
 
-for( let rep = 1; rep <= 10; rep++) {
-    console.log(`Rep is ${rep}`);
-}
+// for( let rep = 1; rep <= 10; rep++) {
+//     console.log(`Rep is ${rep}`);
+// }
 
 
-const daniel = [
-    'Daniel',
-    'Dael',
-    2037 - 1992,
-    'Web Developer',
-    ['Gelie', 'Yendell', 'Rupert'],
-    true
-];
+// const daniel = [
+//     'Daniel',
+//     'Dael',
+//     2037 - 1992,
+//     'Web Developer',
+//     ['Gelie', 'Yendell', 'Rupert'],
+//     true
+// ];
 
-const types =[];
+// const types =[];
 
-for(let i = 0; i < daniel.length ; i++) {
+// for(let i = 0; i < daniel.length ; i++) {
 
-    // Reading from daniel array
-    console.log(daniel[i], typeof daniel[i]);
+//     // Reading from daniel array
+//     console.log(daniel[i], typeof daniel[i]);
  
 
-    // Filling types array
-    // types[i] = typeof daniel[i];
-    types.push(typeof daniel[i]);
+//     // Filling types array
+//     // types[i] = typeof daniel[i];
+//     types.push(typeof daniel[i]);
+// }
+
+// console.log(types);
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i < years.length; i++) {
+//     ages.push(2027 - years[i]);
+// }
+
+
+// console.log(ages);
+
+// // continue and break
+// console.log('--- ONLY STRINGS ---');
+// for(let i = 0; i < daniel.length ; i++) {
+//     if(typeof daniel[i] !== 'string') continue;
+
+//     console.log(daniel[i], typeof daniel[i]);
+// }
+
+// console.log('--- BREAK WITH NUMBER ---');
+// for(let i = 0; i < daniel.length ; i++) {
+//     if(typeof daniel[i] === 'number') break;
+
+//     console.log(daniel[i], typeof daniel[i]);
+// }
+
+// const daniel = [
+//     'Daniel',
+//     'Dael',
+//     2037 - 1992,
+//     'Web Developer',
+//     ['Gelie', 'Yendell', 'Rupert'],
+//     true
+// ];
+
+// for(let i = daniel.length - 1; i >= 0; i--) {
+//     console.log(i,daniel[i]);
+// }
+
+
+// for( let exercise = 1; exercise < 4; exercise++) {
+// console.log(`------------Starting exercise ${exercise}`);
+
+// for( let rep = 1; rep < 6; rep++) {
+//     console.log(`Exercise ${exercise}: Lifting weight repition ${rep}.`)
+// }
+// };
+
+
+
+
+// For Loop
+
+// for( let rep = 1; rep <= 10; rep++) {
+//     console.log(`Lifting weights repetition ${rep}`);
+// }
+
+// While Loop
+ 
+
+let rep = 1;
+while( rep <= 10) {
+    console.log(`While:Lifting weights repetition ${rep}`);
+    rep++;
 }
 
-console.log(types);
+let dice = Math.trunc(Math.random() * 6) + 1
 
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
+console.log(dice);
 
-for (let i = 0; i < years.length; i++) {
-    ages.push(2027 - years[i]);
+while( dice !== 6) {
+ console.log(`You rolled a ${dice}`);
+dice = Math.trunc(Math.random() * 6) + 1;
+if (dice === 6) {
+    console.log(`Loop is about to end...`)
 }
-
-
-console.log(ages);
-
-// continue and break
-console.log('--- ONLY STRINGS ---');
-for(let i = 0; i < daniel.length ; i++) {
-    if(typeof daniel[i] !== 'string') continue;
-
-    console.log(daniel[i], typeof daniel[i]);
 }
-
-console.log('--- BREAK WITH NUMBER ---');
-for(let i = 0; i < daniel.length ; i++) {
-    if(typeof daniel[i] === 'number') break;
-
-    console.log(daniel[i], typeof daniel[i]);
-}
-
-
-
